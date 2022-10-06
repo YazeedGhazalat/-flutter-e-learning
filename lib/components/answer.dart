@@ -19,7 +19,7 @@ class Answer extends StatelessWidget {
             textStyle:
                 MaterialStateProperty.all(const TextStyle(color: Colors.white)),
             backgroundColor: MaterialStateProperty.all(Colors.green)),
-        child: Text(answerText),
+        child: Text(answerText, style: TextStyle(fontFamily: "OpenSans")),
       ),
     );
   }

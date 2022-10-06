@@ -100,7 +100,11 @@ class _LevelQuizState extends State<LevelQuiz> {
         automaticallyImplyLeading: false,
         title: const Text(
           'Level Test',
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(
+              color: Colors.black,
+              fontFamily: "OpenSans",
+              fontSize: 35,
+              fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.white,
       ),
