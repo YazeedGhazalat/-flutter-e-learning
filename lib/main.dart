@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/Courses/English4begginner.dart';
 import 'package:myapp/Courses/EnglishL2.dart';
+import 'package:myapp/quizzes/Q1.dart';
 import 'package:myapp/screens/Home.dart';
+import 'package:myapp/screens/quizPage.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -11,6 +13,8 @@ void main() {
       "English4begginner": ((context) => English4begginner()),
       "InterMiediate": (context) => Intermidiate(),
       "Home": ((context) => Home()),
+      "quizpage": ((context) => QuizPage()),
+      "LevelQuiz": (context) => LevelQuiz(),
     },
   ));
 }

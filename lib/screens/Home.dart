@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/screens/MyCourse.dart';
-import 'package:myapp/screens/quiz.dart';
+import 'package:myapp/screens/quizPage.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -17,8 +17,8 @@ class _HomeState extends State<Home> {
   static const List<Widget> _widgetOptions = [
     MyCourse(),
     MyCourse(),
-    Quiz(),
-    Quiz(),
+    QuizPage(),
+    QuizPage(),
   ];
   void _onItemTapped(int index) {
     setState(() {
