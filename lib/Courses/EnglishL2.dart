@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
+import 'package:myapp/models/links.dart';
 
 class Intermidiate extends StatefulWidget {
   const Intermidiate({super.key});
@@ -40,7 +42,7 @@ class _IntermidiateState extends State<Intermidiate> {
           ListTile(
             onTap: (() {}),
             leading: Container(
-                child: Icon(Icons.book),
+                child: Icon(Ionicons.book),
                 width: 70,
                 height: 70,
                 color: Colors.amber),
@@ -53,7 +55,7 @@ class _IntermidiateState extends State<Intermidiate> {
           ListTile(
             onTap: (() {}),
             leading: Container(
-                child: Icon(Icons.book),
+                child: Icon(Ionicons.book),
                 width: 70,
                 height: 70,
                 color: Colors.red),
@@ -66,7 +68,7 @@ class _IntermidiateState extends State<Intermidiate> {
           ListTile(
             onTap: (() {}),
             leading: Container(
-                child: Icon(Icons.book),
+                child: Icon(Ionicons.book),
                 width: 70,
                 height: 70,
                 color: Colors.blue),
@@ -79,7 +81,7 @@ class _IntermidiateState extends State<Intermidiate> {
           ListTile(
             onTap: (() {}),
             leading: Container(
-                child: Icon(Icons.book),
+                child: Icon(Ionicons.book),
                 width: 70,
                 height: 70,
                 color: Colors.purple),
@@ -92,7 +94,7 @@ class _IntermidiateState extends State<Intermidiate> {
           ListTile(
             onTap: (() {}),
             leading: Container(
-                child: Icon(Icons.book),
+                child: Icon(Ionicons.book),
                 width: 70,
                 height: 70,
                 color: Colors.green),
@@ -105,7 +107,7 @@ class _IntermidiateState extends State<Intermidiate> {
           ListTile(
             onTap: (() {}),
             leading: Container(
-                child: Icon(Icons.book),
+                child: Icon(Ionicons.book),
                 width: 70,
                 height: 70,
                 color: Colors.pink),
@@ -114,6 +116,26 @@ class _IntermidiateState extends State<Intermidiate> {
             isThreeLine: true,
             trailing:
                 Icon(Icons.arrow_forward_ios, color: Colors.grey, size: 40),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              "Contact",
+              textAlign: TextAlign.left,
+              style: TextStyle(fontSize: 30, fontFamily: "OpenSans"),
+            ),
+          ),
+          URLClass(
+            myFunction: Email,
+            myPlatformIcon: Ionicons.mail,
+            myPlatformTitle: "Email",
+            myPlatformSubTitle: "YazeedGhazalat@gmail.com",
+          ),
+          URLClass(
+            myFunction: Phone,
+            myPlatformIcon: Ionicons.call,
+            myPlatformTitle: "Phone",
+            myPlatformSubTitle: "+962780785310",
           ),
         ],
       ),

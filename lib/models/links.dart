@@ -7,12 +7,30 @@ final Uri Instagram_url =
 final Uri LinkedIN_url =
     Uri.parse('https://www.linkedin.com/in/yazeed-ghazalat-205111161');
 final Uri ourLocation_url = Uri.parse('https://goo.gl/maps/CnFADFJpFDvj4Azt6');
-final Uri pdf_url = Uri.parse('PDF/3Reading.pdf');
+final Uri GitHub_url = Uri.parse('https://github.com/YazeedGhazalat');
 final Uri Email_url = Uri.parse('mailto:yazeedghazalat@gmail.com');
 final Uri Phone_url = Uri.parse('tel:+962780785310');
 Future<void> Facebook() async {
   if (!await launchUrl(Facebook_url)) {
     throw 'Could not launch $Facebook_url';
+  }
+}
+
+Future<void> GitHub() async {
+  if (!await launchUrl(GitHub_url)) {
+    throw 'Could not launch $GitHub_url';
+  }
+}
+
+Future<void> Email() async {
+  if (!await launchUrl(Email_url)) {
+    throw 'Could not launch $Email_url';
+  }
+}
+
+Future<void> Phone() async {
+  if (!await launchUrl(Phone_url)) {
+    throw 'Could not launch $Phone_url';
   }
 }
 
@@ -34,6 +52,7 @@ Future<void> ourLocation() async {
   }
 }
 
+// ignore: must_be_immutable
 class URLClass extends StatelessWidget {
   URLClass(
       {required this.myFunction,
@@ -49,32 +68,27 @@ class URLClass extends StatelessWidget {
     return GestureDetector(
       onTap: myFunction,
       child: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Color.fromARGB(255, 221, 178, 26),
-              Color.fromARGB(255, 253, 135, 0),
-              //Color.fromARGB(255, 221, 178, 26),
-            ],
-            begin: const FractionalOffset(0.0, 0.0),
-            end: const FractionalOffset(1.0, 0.0),
-            stops: [0.0, 1.0],
-          ),
-          color: Colors.white.withOpacity(0.9),
-        ),
         child: ListTile(
+          isThreeLine: true,
           title: Text(
             "$myPlatformTitle",
-            style: TextStyle(color: Colors.white, fontSize: 20),
+            style: TextStyle(
+              fontFamily: "RobotoSlab",
+              color: Colors.deepOrange,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
           ),
           subtitle: Text(
             "$myPlatformSubTitle",
-            style: TextStyle(color: Colors.white, fontSize: 15),
+            style: TextStyle(
+              fontSize: 18,
+              fontFamily: "RobotoSlab",
+            ),
           ),
           leading: Icon(
             myPlatformIcon,
-            size: 35,
-            color: Colors.white,
+            size: 40,
           ),
         ),
       ),
