@@ -131,12 +131,16 @@ class _IntermidiateState extends State<Intermidiate> {
             myPlatformTitle: "Email",
             myPlatformSubTitle: "YazeedGhazalat@gmail.com",
           ),
+          Divider(
+              color: Colors.grey, thickness: 2, indent: 100, endIndent: 100),
           URLClass(
             myFunction: Phone,
             myPlatformIcon: Ionicons.call,
             myPlatformTitle: "Phone",
             myPlatformSubTitle: "+962780785310",
           ),
+          Divider(
+              color: Colors.grey, thickness: 2, indent: 100, endIndent: 100),
         ],
       ),
     );
