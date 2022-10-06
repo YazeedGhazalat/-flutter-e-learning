@@ -38,7 +38,9 @@ class _English4begginnerState extends State<English4begginner> {
             ),
           ),
           ListTile(
-            onTap: (() {}),
+            onTap: (() {
+              Navigator.pushNamed(context, "pdf");
+            }),
             leading: Container(
                 child: Icon(Icons.book),
                 width: 70,
