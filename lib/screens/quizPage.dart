@@ -15,7 +15,7 @@ class _QuizPageState extends State<QuizPage> {
     return Column(
       children: [
         quizButton(
-          quizName: "Level Test",
+          quizName: "English Level Test",
           quizPage: "LevelQuiz",
         )
       ],

@@ -49,8 +49,11 @@ class _quizButtonState extends State<quizButton> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(widget.quizName.toString()),
-                        Text('Test Video', style: TextStyle(color: Colors.grey))
+                        Text(widget.quizName.toString(),
+                            style: TextStyle(fontFamily: "OpenSans")),
+                        Text('One-Way MQ',
+                            style: TextStyle(
+                                color: Colors.grey, fontFamily: "OpenSans"))
                       ],
                     ),
                   ),
