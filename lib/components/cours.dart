@@ -57,7 +57,7 @@ class _CourseState extends State<Course> {
           RatingBar.builder(
             allowHalfRating: true,
             initialRating: widget.iRate.toDouble(),
-            ignoreGestures: true,
+            ignoreGestures: false,
             itemSize: 18,
             itemPadding: EdgeInsets.symmetric(horizontal: 0.4),
             itemBuilder: (context, _) => Icon(

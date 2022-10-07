@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/Courses/English4begginner.dart';
 import 'package:myapp/Courses/EnglishL2.dart';
+import 'package:myapp/Log_in/StartPage.dart';
 import 'package:myapp/quizzes/Q1.dart';
 import 'package:myapp/screens/Home.dart';
+import 'package:myapp/screens/edit.dart';
+import 'package:myapp/screens/profile.dart';
 import 'package:myapp/screens/quizPage.dart';
 
 void main() {
@@ -15,6 +18,8 @@ void main() {
       "Home": ((context) => Home()),
       "quizpage": ((context) => QuizPage()),
       "LevelQuiz": (context) => LevelQuiz(),
+      "edit page": (context) => Edit_Profile(),
+      "profile page": (context) => ProfilePage()
     },
   ));
 }
@@ -29,6 +34,6 @@ class Myapp extends StatefulWidget {
 class _MyappState extends State<Myapp> {
   @override
   Widget build(BuildContext context) {
-    return Home();
+    return StartPage();
   }
 }

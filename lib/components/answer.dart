@@ -10,17 +10,17 @@ class Answer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      child: ElevatedButton(
-        onPressed: (() {
-          selectHandler();
-        }),
-        style: ButtonStyle(
-            textStyle:
-                MaterialStateProperty.all(const TextStyle(color: Colors.white)),
-            backgroundColor: MaterialStateProperty.all(Colors.green)),
-        child: Text(answerText, style: TextStyle(fontFamily: "OpenSans")),
-      ),
-    );
+        width: double.infinity,
+        child: ElevatedButton(
+          child: Text(answerText,
+              style: TextStyle(color: Colors.black, fontFamily: "OpenSans")),
+          onPressed: (() {
+            selectHandler();
+          }),
+          style: ElevatedButton.styleFrom(
+            minimumSize: Size(100, 40),
+            backgroundColor: Colors.white,
+          ),
+        ));
   }
 }

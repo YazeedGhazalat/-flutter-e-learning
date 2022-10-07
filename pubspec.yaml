@@ -40,6 +40,9 @@ dependencies:
   
   url_launcher: ^6.1.6
   ionicons: ^0.2.1
+  english_words: ^4.0.0
+  line_icons: ^2.0.1
+  google_fonts: ^3.0.1
 
 dev_dependencies:
   flutter_test:
