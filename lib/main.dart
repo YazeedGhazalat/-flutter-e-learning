@@ -21,6 +21,7 @@ void main() {
       "edit page": (context) => Edit_Profile(),
       "profile page": (context) => ProfilePage()
     },
+    theme: ThemeData(primaryColor: Colors.green),
   ));
 }
 
