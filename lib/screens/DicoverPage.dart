@@ -32,6 +32,12 @@ class _HomeState extends State<Home> {
 
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => Navigator.pushNamed(context, "Home"),
+        child: Icon(Icons.arrow_back_ios_new_outlined),
+        backgroundColor: Colors.grey,
+      ),
       drawerEnableOpenDragGesture: true,
       drawerEdgeDragWidth: 20,
       bottomNavigationBar: BottomNavigationBar(

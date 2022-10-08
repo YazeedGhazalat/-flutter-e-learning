@@ -21,7 +21,6 @@ class _Update_passState extends State<Update_pass> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Container(
         color: Color.fromARGB(221, 222, 212, 212),
         child: Center(

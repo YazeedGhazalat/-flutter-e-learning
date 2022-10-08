@@ -7,6 +7,7 @@ import 'package:myapp/quizzes/Q2.dart';
 import 'package:myapp/quizzes/Q3.dart';
 import 'package:myapp/screens/DicoverPage.dart';
 import 'package:myapp/screens/HomePage.dart';
+
 import 'package:myapp/screens/MyCourse.dart';
 import 'package:myapp/screens/WordsPage.dart';
 import 'package:myapp/screens/edit.dart';
@@ -20,7 +21,7 @@ void main() {
     routes: {
       "English4begginner": ((context) => English4begginner()),
       "InterMiediate": (context) => Intermidiate(),
-      "Home": ((context) => Home()),
+      "Home": ((context) => HomePage()),
       "quizpage": ((context) => QuizPage()),
       "LevelQuiz": (context) => LevelQuiz(),
       "Level2Quiz": (context) => Level2Quiz(),

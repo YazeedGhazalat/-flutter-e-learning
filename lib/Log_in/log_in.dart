@@ -22,7 +22,6 @@ class _Log_inState extends State<Log_in> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Container(
         color: Color.fromARGB(221, 222, 212, 212),
         child: Center(
@@ -119,11 +118,7 @@ class _Log_inState extends State<Log_in> {
                           onPressed: () {
                             if (emailController.text == val &&
                                 passwordController.text == val1) {
-                              Navigator.push(context, MaterialPageRoute(
-                                builder: (context) {
-                                  return Home();
-                                },
-                              ));
+                              Navigator.pushNamed(context, "Home");
                             } else {
                               showDialog(
                                   context: context,

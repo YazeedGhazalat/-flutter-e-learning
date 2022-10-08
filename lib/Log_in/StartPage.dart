@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:myapp/Log_in/log_in.dart';
 
 import 'package:myapp/screens/HomePage.dart';
 
@@ -18,7 +19,7 @@ class _StartPageState extends State<StartPage> {
     Timer(Duration(seconds: 3), () {
       Navigator.pushReplacement(context, MaterialPageRoute<void>(
         builder: (BuildContext context) {
-          return HomePage();
+          return Log_in();
         },
       ));
     });

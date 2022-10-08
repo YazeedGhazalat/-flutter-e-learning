@@ -20,7 +20,6 @@ class _Forget_passState extends State<Forget_pass> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Container(
         color: Color.fromARGB(221, 222, 212, 212),
         child: Center(
