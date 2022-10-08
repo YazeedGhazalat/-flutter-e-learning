@@ -45,6 +45,6 @@ class Myapp extends StatefulWidget {
 class _MyappState extends State<Myapp> {
   @override
   Widget build(BuildContext context) {
-    return HomePage();
+    return StartPage();
   }
 }

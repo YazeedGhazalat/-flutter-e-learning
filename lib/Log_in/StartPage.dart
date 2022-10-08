@@ -1,7 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:myapp/Log_in/log_in.dart';
+
+import 'package:myapp/screens/HomePage.dart';
 
 class StartPage extends StatefulWidget {
   const StartPage({super.key});
@@ -17,7 +18,7 @@ class _StartPageState extends State<StartPage> {
     Timer(Duration(seconds: 3), () {
       Navigator.pushReplacement(context, MaterialPageRoute<void>(
         builder: (BuildContext context) {
-          return Log_in();
+          return HomePage();
         },
       ));
     });
@@ -26,16 +27,10 @@ class _StartPageState extends State<StartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            "Academy",
-            style: TextStyle(fontSize: 40),
-          ),
-        ],
-      )),
-    );
+        body: Container(
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              fit: BoxFit.cover, image: AssetImage("images/startPAge.png"))),
+    ));
   }
 }

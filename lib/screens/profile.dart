@@ -36,47 +36,6 @@ class _ProfilePageState extends State<ProfilePage> {
         const SizedBox(
           height: 24,
         ),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                width: 50,
-                height: 50,
-                child: URLClass(
-                    iconColor: Color.fromARGB(255, 0, 121, 220),
-                    myFunction: GitHub,
-                    myPlatformIcon: Ionicons.logo_github,
-                    myPlatformSubTitle: "",
-                    myPlatformTitle: ""),
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                child: URLClass(
-                    iconColor: Color.fromARGB(255, 0, 121, 220),
-                    myFunction: LinkedIN,
-                    myPlatformIcon: Ionicons.logo_linkedin,
-                    myPlatformSubTitle: "",
-                    myPlatformTitle: ""),
-              ),
-              Container(
-                width: 0,
-                height: 50,
-                child: URLClass(
-                    iconColor: Color.fromARGB(255, 0, 121, 220),
-                    myFunction: Facebook,
-                    myPlatformIcon: Ionicons.logo_facebook,
-                    myPlatformSubTitle: "",
-                    myPlatformTitle: ""),
-              ),
-            ],
-          ),
-        ),
-        SizedBox(
-          height: 24,
-        ),
         Center(child: buildEditButton()),
         const SizedBox(
           height: 24,
@@ -86,6 +45,18 @@ class _ProfilePageState extends State<ProfilePage> {
           height: 30,
         ),
         buildAbout(user),
+        Divider(
+          thickness: 5,
+          endIndent: 40,
+          indent: 50,
+        ),
+        URLClass(
+          myFunction: Facebook,
+          myPlatformIcon: Ionicons.logo_facebook,
+          iconColor: Color.fromARGB(255, 8, 143, 253),
+          myPlatformSubTitle: 'Yazeed Ghazalat',
+          myPlatformTitle: 'Yazeed Ghazalat',
+        )
       ],
     );
   }
