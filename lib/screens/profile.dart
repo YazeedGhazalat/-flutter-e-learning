@@ -1,9 +1,9 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:myapp/components%20copy/numbers_widget.dart';
 import 'package:myapp/components/appbar.dart';
 import 'package:myapp/components/button_widget.dart';
+import 'package:myapp/components/numbers_widget.dart';
 import 'package:myapp/components/profilewidget.dart';
 import 'package:myapp/models/user.dart';
 import 'package:myapp/utils/user_preferences.dart';

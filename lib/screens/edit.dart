@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/components/appbar.dart';
 import 'package:myapp/components/profilewidget.dart';
 import 'package:myapp/models/user.dart';
 import 'package:myapp/utils/user_preferences.dart';
 
-import '../components copy/appbar.dart';
 import '../components/text_field_widget.dart';
 
 class Edit_Profile extends StatefulWidget {
