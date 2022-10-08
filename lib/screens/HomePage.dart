@@ -119,11 +119,9 @@ class _HomePageState extends State<HomePage> {
                               child: Container(
                                 decoration: const BoxDecoration(
                                   image: DecorationImage(
-                                      fit: BoxFit.fill,
-                                      image: NetworkImage(
-                                          "https://static.vecteezy.com/system/resources/previews/006/275/315/original/a-boy-read-books-on-white-background-free-vector.jpg")
-                                      // image: AssetImage("images/1.webp"),
-                                      ),
+                                    fit: BoxFit.fill,
+                                    image: AssetImage("images/4.png"),
+                                  ),
                                 ),
                                 width: 100,
                                 height: 100,
