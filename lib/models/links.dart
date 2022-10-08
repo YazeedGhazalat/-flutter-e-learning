@@ -56,9 +56,11 @@ Future<void> ourLocation() async {
 class URLClass extends StatelessWidget {
   URLClass(
       {required this.myFunction,
+      this.iconColor,
       required this.myPlatformIcon,
-      required this.myPlatformSubTitle,
-      required this.myPlatformTitle});
+      this.myPlatformSubTitle,
+      this.myPlatformTitle});
+  Color? iconColor = Colors.grey;
   String? myPlatformTitle;
   String? myPlatformSubTitle;
   IconData? myPlatformIcon;
@@ -87,6 +89,7 @@ class URLClass extends StatelessWidget {
             ),
           ),
           leading: Icon(
+            color: iconColor,
             myPlatformIcon,
             size: 40,
           ),
