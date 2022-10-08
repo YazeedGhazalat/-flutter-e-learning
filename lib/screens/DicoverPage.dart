@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:myapp/components/tile.dart';
 import 'package:myapp/screens/HomePage.dart';
 import 'package:myapp/screens/MyCourse.dart';
-import 'package:myapp/screens/WordsPage.dart';
 import 'package:myapp/screens/profile.dart';
 import 'package:myapp/screens/quizPage.dart';
 import 'package:line_icons/line_icons.dart';
@@ -22,7 +21,6 @@ class _HomeState extends State<Home> {
   static const List<Widget> _widgetOptions = [
     MyCourse(),
     QuizPage(),
-    Words(),
     ProfilePage()
   ];
   void _onItemTapped(int index) {
@@ -93,10 +91,6 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(
             icon: Icon(Icons.quiz_outlined),
             label: 'Quiz',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.wordpress),
-            label: 'Words',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outlined),

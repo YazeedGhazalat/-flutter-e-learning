@@ -21,7 +21,8 @@ class _CourseState extends State<Course> {
           Navigator.pushNamed(context, "InterMiediate");
         if (widget.cName.toString() == "") Navigator.pushNamed(context, "");
         if (widget.cName.toString() == "") Navigator.pushNamed(context, "");
-        if (widget.cName.toString() == "") Navigator.pushNamed(context, "");
+        if (widget.cName.toString() == "Words")
+          Navigator.pushNamed(context, "Words");
       }),
       child: Container(
         decoration: BoxDecoration(

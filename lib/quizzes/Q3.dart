@@ -18,22 +18,23 @@ class _Level3QuizState extends State<Level3Quiz> {
         {'text': 'But For', 'score': 0},
         {'text': 'Not', 'score': 0},
         {'text': 'Unless', 'score': 0},
-        {'text': 'Despite', 'score': 2},
+        {'text': 'Despite', 'score': 20},
       ],
     },
     {
-      'questionText': 'Q2. Only when ____ left, did we notice what she had done.',
+      'questionText':
+          'Q2. Only when ____ left, did we notice what she had done.',
       'answers': [
         {'text': 'Did She', 'score': 0},
         {'text': 'She Did', 'score': 0},
-        {'text': 'She Had', 'score': 2},
+        {'text': 'She Had', 'score': 20},
         {'text': 'Had She', 'score': 0},
       ],
     },
     {
       'questionText': ' Q3. It is high time you ____ that',
       'answers': [
-        {'text': 'Stop', 'score': 2},
+        {'text': 'Stop', 'score': 20},
         {'text': 'To Stop', 'score': 0},
         {'text': 'Stopped', 'score': 0},
         {'text': 'Stopping', 'score': 0},
@@ -43,9 +44,9 @@ class _Level3QuizState extends State<Level3Quiz> {
       'questionText': 'Q4.If he ___, I will not stay.',
       'answers': [
         {'text': 'Come', 'score': 0},
-        {'text': 'Comes', 'score': 2},
+        {'text': 'Comes', 'score': 20},
         {'text': 'Came', 'score': 0},
-        {'text':'Will Come', 'score': 0},
+        {'text': 'Will Come', 'score': 0},
       ],
     },
     {
@@ -53,7 +54,7 @@ class _Level3QuizState extends State<Level3Quiz> {
       'answers': [
         {'text': 'Innoble', 'score': 0},
         {'text': 'Unnoble', 'score': 0},
-        {'text': 'Disnoble', 'score': 2},
+        {'text': 'Disnoble', 'score': 20},
         {'text': 'Ignoble', 'score': 0},
       ],
     },

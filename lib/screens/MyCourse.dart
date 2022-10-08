@@ -53,16 +53,18 @@ class _MyCourseState extends State<MyCourse> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Course(
-                iRate: 3,
-                cImage: "images/2.png",
-                cName: "English for begginner"),
+              iRate: 5,
+              cImage: "images/77.png",
+              cName: "English Grammar",
+            ),
             SizedBox(
               width: 10,
             ),
             Course(
-                iRate: 4.5,
-                cImage: "images/2.png",
-                cName: "English for begginner"),
+              iRate: 5,
+              cImage: "images/L.jpg",
+              cName: "English literature",
+            )
           ],
         ),
         SizedBox(
@@ -74,10 +76,7 @@ class _MyCourseState extends State<MyCourse> {
             SizedBox(
               width: 15,
             ),
-            Course(
-                iRate: 3.5,
-                cImage: "images/2.png",
-                cName: "English for begginner"),
+            Course(iRate: 3.5, cImage: "images/word.png", cName: "Words"),
           ],
         ),
         SizedBox(

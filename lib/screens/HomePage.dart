@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
-
 import 'package:myapp/components/recomanded.dart';
 import 'package:myapp/models/videoHome.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+final Uri Library_url = Uri.parse('https://chestofbooks.com/');
+Future<void> Library() async {
+  if (!await launchUrl(Library_url)) {
+    throw 'Could not launch $Library_url';
+  }
+}
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -25,13 +32,13 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.pink,
       ),
       body: Container(
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("images/homePage.jpg"), fit: BoxFit.cover)),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(
-                height: 20,
-              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -42,7 +49,7 @@ class _HomePageState extends State<HomePage> {
                         boxShadow: [
                           BoxShadow(
                             color: Colors.black.withOpacity(.2),
-                            offset: Offset(0, 50),
+                            offset: Offset(0, 0),
                             blurRadius: 100,
                           )
                         ],
@@ -130,32 +137,27 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: 15,
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text(
+                    "Recommended Courses:",
+                    style: TextStyle(fontSize: 20, fontFamily: "OpenSans"),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 10,
+              ),
               Container(
-                alignment: Alignment.centerLeft,
-                height: 170,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(.2),
-                      offset: Offset(0, 50),
-                      blurRadius: 100,
-                    )
-                  ],
-                ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Text("dddd"),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
                     SingleChildScrollView(
+                      physics: BouncingScrollPhysics(),
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
@@ -187,6 +189,9 @@ class _HomePageState extends State<HomePage> {
                               cImage: "images/L.jpg",
                               cName: "English literature",
                               iRate: 5),
+                          SizedBox(
+                            width: 10,
+                          ),
                         ],
                       ),
                     ),
@@ -202,75 +207,81 @@ class _HomePageState extends State<HomePage> {
                   SizedBox(
                     height: 10,
                   ),
-                  Container(
-                    padding: EdgeInsets.only(top: 5),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(30)),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(.2),
-                          offset: Offset(0, 50),
-                          blurRadius: 100,
-                        )
-                      ],
-                    ),
-                    width: 130,
-                    height: 130,
-                    child: Column(
-                      children: [
-                        CircleAvatar(
-                          radius: 35,
-                          backgroundImage: AssetImage("images/9.jpg"),
-                        ),
-                        SizedBox(
-                          height: 5,
-                        ),
-                        Text(
-                          "Courses",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "opensans",
-                              fontSize: 20),
-                        )
-                      ],
+                  GestureDetector(
+                    onTap: () => Navigator.pushNamed(context, "DescoverPage"),
+                    child: Container(
+                      padding: EdgeInsets.only(top: 5),
+                      decoration: BoxDecoration(
+                        color: Colors.green,
+                        borderRadius: BorderRadius.all(Radius.circular(30)),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.2),
+                            offset: Offset(0, 0),
+                            blurRadius: 100,
+                          )
+                        ],
+                      ),
+                      width: 130,
+                      height: 130,
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 35,
+                            backgroundImage: AssetImage("images/9.jpg"),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            "Courses",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "opensans",
+                                fontSize: 20),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   SizedBox(
                     width: 10,
                   ),
-                  Container(
-                    padding: EdgeInsets.only(top: 5),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(30)),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(.2),
-                          offset: Offset(0, 50),
-                          blurRadius: 100,
-                        )
-                      ],
-                    ),
-                    width: 130,
-                    height: 130,
-                    child: Column(
-                      children: [
-                        CircleAvatar(
-                          radius: 35,
-                          backgroundImage: AssetImage("images/6.jpg"),
-                        ),
-                        SizedBox(
-                          height: 5,
-                        ),
-                        Text(
-                          "Quiz",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "opensans",
-                              fontSize: 20),
-                        )
-                      ],
+                  GestureDetector(
+                    onTap: () => Navigator.pushNamed(context, "DescoverPage"),
+                    child: Container(
+                      padding: EdgeInsets.only(top: 5),
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.all(Radius.circular(30)),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.2),
+                            offset: Offset(0, 0),
+                            blurRadius: 100,
+                          )
+                        ],
+                      ),
+                      width: 130,
+                      height: 130,
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 35,
+                            backgroundImage: AssetImage("images/6.jpg"),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            "Quiz",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "opensans",
+                                fontSize: 20),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
@@ -281,41 +292,41 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(top: 5),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(Radius.circular(30)),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(.2),
-                          offset: Offset(0, 50),
-                          blurRadius: 100,
-                        )
-                      ],
-                    ),
-                    width: 268,
-                    height: 120,
-                    child: Column(
-                      children: [
-                        CircleAvatar(
-                          radius: 35,
-                          backgroundImage: AssetImage("images/3.jpg"),
-                        ),
-                        SizedBox(
-                          height: 5,
-                        ),
-                        Text(
-                          "Library",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontFamily: "opensans",
-                              fontSize: 20),
-                        )
-                      ],
+                  GestureDetector(
+                    onTap: Library,
+                    child: Container(
+                      padding: EdgeInsets.only(top: 5),
+                      decoration: BoxDecoration(
+                        color: Colors.amber,
+                        borderRadius: BorderRadius.all(Radius.circular(30)),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(.2),
+                            offset: Offset(0, 0),
+                            blurRadius: 100,
+                          )
+                        ],
+                      ),
+                      width: 268,
+                      height: 120,
+                      child: Column(
+                        children: [
+                          CircleAvatar(
+                            radius: 35,
+                            backgroundImage: AssetImage("images/3.jpg"),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            "Library",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "opensans",
+                                fontSize: 20),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],

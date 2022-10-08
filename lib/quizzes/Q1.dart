@@ -18,7 +18,7 @@ class _LevelQuizState extends State<LevelQuiz> {
         {'text': 'at', 'score': 0},
         {'text': 'to', 'score': 0},
         {'text': 'in', 'score': 0},
-        {'text': 'on', 'score': 2},
+        {'text': 'on', 'score': 20},
       ],
     },
     {
@@ -26,14 +26,14 @@ class _LevelQuizState extends State<LevelQuiz> {
       'answers': [
         {'text': 'at', 'score': 0},
         {'text': 'to', 'score': 0},
-        {'text': 'in', 'score': 2},
+        {'text': 'in', 'score': 20},
         {'text': 'on', 'score': 0},
       ],
     },
     {
       'questionText': ' Q3. How do you get to work? ----.',
       'answers': [
-        {'text': 'By car', 'score': 2},
+        {'text': 'By car', 'score': 20},
         {'text': 'In car', 'score': 0},
         {'text': 'By the car', 'score': 0},
         {'text': 'On car', 'score': 0},
@@ -45,14 +45,14 @@ class _LevelQuizState extends State<LevelQuiz> {
         {'text': 'Yes, I likes', 'score': 0},
         {'text': 'Yes, I like', 'score': 0},
         {'text': 'Yes, I does', 'score': 0},
-        {'text': 'Yes, I do', 'score': 2},
+        {'text': 'Yes, I do', 'score': 20},
       ],
     },
     {
       'questionText': 'Q5. Where is Mary? She ---- over there.',
       'answers': [
         {'text': 'is stand', 'score': 0},
-        {'text': 'is standing', 'score': 2},
+        {'text': 'is standing', 'score': 20},
         {'text': 'stand', 'score': 0},
         {'text': 'standing', 'score': 0},
       ],

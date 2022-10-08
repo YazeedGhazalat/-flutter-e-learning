@@ -16,15 +16,9 @@ class _RecommandedState extends State<Recommanded> {
     return GestureDetector(
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
+          border: Border.all(width: 2),
+          color: Colors.transparent,
           borderRadius: BorderRadius.all(Radius.circular(20)),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(.2),
-              offset: Offset(0, 50),
-              blurRadius: 100,
-            )
-          ],
         ),
         width: 130,
         height: 130,
@@ -38,7 +32,8 @@ class _RecommandedState extends State<Recommanded> {
             height: 2,
           ),
           Text(
-            style: TextStyle(fontSize: 14, fontFamily: "OpenSans"),
+            style: TextStyle(
+                fontSize: 14, fontFamily: "OpenSans", color: Colors.black),
             widget.cName.toString(),
             textAlign: TextAlign.left,
           ),

@@ -16,17 +16,18 @@ class _Level2QuizState extends State<Level2Quiz> {
       'questionText': 'Q1.I __________________ TV when the telephone rang.',
       'answers': [
         {'text': 'Watched', 'score': 0},
-        {'text': 'Was Watching', 'score': 2},
+        {'text': 'Was Watching', 'score': 20},
         {'text': 'Are Watching', 'score': 0},
         {'text': 'Have Watched', 'score': 0},
       ],
     },
     {
-      'questionText': 'Q2. I am afraid I am not hungry. I have _______ eaten lunch.',
+      'questionText':
+          'Q2. I am afraid I am not hungry. I have _______ eaten lunch.',
       'answers': [
         {'text': 'Yet', 'score': 0},
         {'text': 'Still', 'score': 0},
-        {'text': 'Already', 'score': 2},
+        {'text': 'Already', 'score': 20},
         {'text': 'Ever', 'score': 0},
       ],
     },
@@ -34,7 +35,7 @@ class _Level2QuizState extends State<Level2Quiz> {
       'questionText': ' Q3. Would you like ___________ chicken?',
       'answers': [
         {'text': 'Any', 'score': 0},
-        {'text': 'Some', 'score': 2},
+        {'text': 'Some', 'score': 20},
         {'text': 'A', 'score': 0},
         {'text': 'One', 'score': 0},
       ],
@@ -42,18 +43,19 @@ class _Level2QuizState extends State<Level2Quiz> {
     {
       'questionText': 'Q4.She _________________ lunch by the time we arrived.',
       'answers': [
-        {'text': 'Had Finished', 'score': 2},
+        {'text': 'Had Finished', 'score': 20},
         {'text': 'Finished', 'score': 0},
         {'text': 'Have Finished', 'score': 0},
-        {'text':'Finishing', 'score': 0},
+        {'text': 'Finishing', 'score': 0},
       ],
     },
     {
-      'questionText': 'Q5. What shall we do tonight? How about ___________ a film?',
+      'questionText':
+          'Q5. What shall we do tonight? How about ___________ a film?',
       'answers': [
         {'text': 'To See', 'score': 0},
         {'text': 'See', 'score': 0},
-        {'text': 'Seeing', 'score': 2},
+        {'text': 'Seeing', 'score': 20},
         {'text': 'Going', 'score': 0},
       ],
     },
