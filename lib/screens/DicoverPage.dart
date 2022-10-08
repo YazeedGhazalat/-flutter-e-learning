@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
       floatingActionButton: FloatingActionButton(
         onPressed: () => Navigator.pushNamed(context, "Home"),
         child: Icon(Icons.arrow_back_ios_new_outlined),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.pink,
       ),
       drawerEnableOpenDragGesture: true,
       drawerEdgeDragWidth: 20,
