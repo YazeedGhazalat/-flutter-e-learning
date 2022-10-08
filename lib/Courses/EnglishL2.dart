@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:myapp/models/links.dart';
+import 'package:myapp/models/Links.dart';
+import 'package:myapp/models/contentModulsTile.dart';
 
 class Intermidiate extends StatefulWidget {
   const Intermidiate({super.key});
@@ -39,83 +40,41 @@ class _IntermidiateState extends State<Intermidiate> {
               style: TextStyle(fontSize: 30, fontFamily: "OpenSans"),
             ),
           ),
-          ListTile(
-            onTap: (() {}),
-            leading: Container(
-                child: Icon(Ionicons.book),
-                width: 70,
-                height: 70,
-                color: Colors.amber),
-            title: Text("Unit 1"),
-            subtitle: Text("Pop-ups"),
-            isThreeLine: true,
-            trailing:
-                Icon(Icons.arrow_forward_ios, color: Colors.grey, size: 40),
+          ModulesTile(
+            myFunction: Unit1,
+            myModuleColor: Colors.red,
+            myModuleTitle: "Unit 1",
+            myModulesSubTitle: "Do you need a hyphen?",
           ),
-          ListTile(
-            onTap: (() {}),
-            leading: Container(
-                child: Icon(Ionicons.book),
-                width: 70,
-                height: 70,
-                color: Colors.red),
-            title: Text("Unit 2"),
-            subtitle: Text("Hidden talents"),
-            isThreeLine: true,
-            trailing:
-                Icon(Icons.arrow_forward_ios, color: Colors.grey, size: 40),
+          ModulesTile(
+            myFunction: Unit2,
+            myModuleColor: Colors.blue,
+            myModuleTitle: "Unit 2",
+            myModulesSubTitle: "Present tenses",
           ),
-          ListTile(
-            onTap: (() {}),
-            leading: Container(
-                child: Icon(Ionicons.book),
-                width: 70,
-                height: 70,
-                color: Colors.blue),
-            title: Text("Unit 3"),
-            subtitle: Text("Can’t buy me love"),
-            isThreeLine: true,
-            trailing:
-                Icon(Icons.arrow_forward_ios, color: Colors.grey, size: 40),
+          ModulesTile(
+            myFunction: Unit3,
+            myModuleColor: Colors.purple,
+            myModuleTitle: "Unit 3",
+            myModulesSubTitle: "The power of pop-ups",
           ),
-          ListTile(
-            onTap: (() {}),
-            leading: Container(
-                child: Icon(Ionicons.book),
-                width: 70,
-                height: 70,
-                color: Colors.purple),
-            title: Text("Unit 4"),
-            subtitle: Text("Travellers’ tales"),
-            isThreeLine: true,
-            trailing:
-                Icon(Icons.arrow_forward_ios, color: Colors.grey, size: 40),
+          ModulesTile(
+            myFunction: Unit4,
+            myModuleColor: Colors.green,
+            myModuleTitle: "Unit 4",
+            myModulesSubTitle: "How to haggle",
           ),
-          ListTile(
-            onTap: (() {}),
-            leading: Container(
-                child: Icon(Ionicons.book),
-                width: 70,
-                height: 70,
-                color: Colors.green),
-            title: Text("Unit 5"),
-            subtitle: Text("The colleague from hell"),
-            isThreeLine: true,
-            trailing:
-                Icon(Icons.arrow_forward_ios, color: Colors.grey, size: 40),
+          ModulesTile(
+            myFunction: Unit5,
+            myModuleColor: Colors.pink,
+            myModuleTitle: "Unit 5",
+            myModulesSubTitle: "New drama",
           ),
-          ListTile(
-            onTap: (() {}),
-            leading: Container(
-                child: Icon(Ionicons.book),
-                width: 70,
-                height: 70,
-                color: Colors.pink),
-            title: Text("Unit 6"),
-            subtitle: Text("Career changes"),
-            isThreeLine: true,
-            trailing:
-                Icon(Icons.arrow_forward_ios, color: Colors.grey, size: 40),
+          ModulesTile(
+            myFunction: Advance,
+            myModuleColor: Colors.amber,
+            myModuleTitle: "Advance",
+            myModulesSubTitle: "Advance",
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),

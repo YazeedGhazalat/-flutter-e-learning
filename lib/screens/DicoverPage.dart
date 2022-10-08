@@ -20,7 +20,6 @@ class _HomeState extends State<Home> {
   static const TextStyle optionStyle = TextStyle(
       fontSize: 30, fontWeight: FontWeight.bold, fontFamily: "OpenSans");
   static const List<Widget> _widgetOptions = [
-    HomePage(),
     MyCourse(),
     QuizPage(),
     Words(),
@@ -38,7 +37,6 @@ class _HomeState extends State<Home> {
       drawerEnableOpenDragGesture: true,
       drawerEdgeDragWidth: 20,
       drawer: Drawer(
-        width: double.infinity,
         backgroundColor: const Color.fromARGB(255, 186, 203, 212),
         child: ListView(
           children: [
@@ -88,10 +86,6 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_outlined),
-            label: 'Home',
-          ),
           BottomNavigationBarItem(
             icon: Icon(Icons.school_outlined),
             label: 'My Course',

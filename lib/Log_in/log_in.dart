@@ -3,7 +3,7 @@ import 'package:myapp/Log_in/StartPage.dart';
 import 'package:myapp/Log_in/forget_pass.dart';
 
 import 'package:myapp/Log_in/sign_up.dart';
-import 'package:myapp/screens/Home.dart';
+import 'package:myapp/screens/DicoverPage.dart';
 
 class Log_in extends StatefulWidget {
   @override
@@ -11,11 +11,11 @@ class Log_in extends StatefulWidget {
 }
 
 class _Log_inState extends State<Log_in> {
-  String val1 = "saleh123";
+  String val1 = "admin";
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   final myController = TextEditingController();
-  String val = "saleh@gmail.com";
+  String val = "admin";
 
   GlobalKey<FormState> formkey = GlobalKey<FormState>();
 

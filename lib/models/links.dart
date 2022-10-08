@@ -73,7 +73,7 @@ class URLClass extends StatelessWidget {
           title: Text(
             "$myPlatformTitle",
             style: TextStyle(
-              fontFamily: "RobotoSlab",
+              fontFamily: "OpenSans",
               color: Colors.deepOrange,
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -83,7 +83,7 @@ class URLClass extends StatelessWidget {
             "$myPlatformSubTitle",
             style: TextStyle(
               fontSize: 18,
-              fontFamily: "RobotoSlab",
+              fontFamily: "OpenSans",
             ),
           ),
           leading: Icon(

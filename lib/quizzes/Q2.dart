@@ -3,58 +3,58 @@ import 'package:myapp/components/result.dart';
 
 import '../components/quiz.dart';
 
-class LevelQuiz extends StatefulWidget {
-  const LevelQuiz({super.key});
+class Level2Quiz extends StatefulWidget {
+  const Level2Quiz({super.key});
 
   @override
-  State<LevelQuiz> createState() => _LevelQuizState();
+  State<Level2Quiz> createState() => _Level2QuizState();
 }
 
-class _LevelQuizState extends State<LevelQuiz> {
+class _Level2QuizState extends State<Level2Quiz> {
   final _questions = const [
     {
-      'questionText': 'Q1.She works ---- Saturday.',
+      'questionText': 'Q1.I __________________ TV when the telephone rang.',
       'answers': [
-        {'text': 'at', 'score': 0},
-        {'text': 'to', 'score': 0},
-        {'text': 'in', 'score': 0},
-        {'text': 'on', 'score': 2},
+        {'text': 'Watched', 'score': 0},
+        {'text': 'Was Watching', 'score': 2},
+        {'text': 'Are Watching', 'score': 0},
+        {'text': 'Have Watched', 'score': 0},
       ],
     },
     {
-      'questionText': 'Q2.I stay at home ---- the morning.',
+      'questionText': 'Q2. I am afraid I am not hungry. I have _______ eaten lunch.',
       'answers': [
-        {'text': 'at', 'score': 0},
-        {'text': 'to', 'score': 0},
-        {'text': 'in', 'score': 2},
-        {'text': 'on', 'score': 0},
+        {'text': 'Yet', 'score': 0},
+        {'text': 'Still', 'score': 0},
+        {'text': 'Already', 'score': 2},
+        {'text': 'Ever', 'score': 0},
       ],
     },
     {
-      'questionText': ' Q3. How do you get to work? ----.',
+      'questionText': ' Q3. Would you like ___________ chicken?',
       'answers': [
-        {'text': 'By car', 'score': 2},
-        {'text': 'In car', 'score': 0},
-        {'text': 'By the car', 'score': 0},
-        {'text': 'On car', 'score': 0},
+        {'text': 'Any', 'score': 0},
+        {'text': 'Some', 'score': 2},
+        {'text': 'A', 'score': 0},
+        {'text': 'One', 'score': 0},
       ],
     },
     {
-      'questionText': 'Q4.Do you like classical music? ----.',
+      'questionText': 'Q4.She _________________ lunch by the time we arrived.',
       'answers': [
-        {'text': 'Yes, I likes', 'score': 0},
-        {'text': 'Yes, I like', 'score': 0},
-        {'text': 'Yes, I does', 'score': 0},
-        {'text': 'Yes, I do', 'score': 2},
+        {'text': 'Had Finished', 'score': 2},
+        {'text': 'Finished', 'score': 0},
+        {'text': 'Have Finished', 'score': 0},
+        {'text':'Finishing', 'score': 0},
       ],
     },
     {
-      'questionText': 'Q5. Where is Mary? She ---- over there.',
+      'questionText': 'Q5. What shall we do tonight? How about ___________ a film?',
       'answers': [
-        {'text': 'is stand', 'score': 0},
-        {'text': 'is standing', 'score': 2},
-        {'text': 'stand', 'score': 0},
-        {'text': 'standing', 'score': 0},
+        {'text': 'To See', 'score': 0},
+        {'text': 'See', 'score': 0},
+        {'text': 'Seeing', 'score': 2},
+        {'text': 'Going', 'score': 0},
       ],
     },
   ];

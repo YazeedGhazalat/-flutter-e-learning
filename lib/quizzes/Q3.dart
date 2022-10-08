@@ -3,58 +3,58 @@ import 'package:myapp/components/result.dart';
 
 import '../components/quiz.dart';
 
-class LevelQuiz extends StatefulWidget {
-  const LevelQuiz({super.key});
+class Level3Quiz extends StatefulWidget {
+  const Level3Quiz({super.key});
 
   @override
-  State<LevelQuiz> createState() => _LevelQuizState();
+  State<Level3Quiz> createState() => _Level3QuizState();
 }
 
-class _LevelQuizState extends State<LevelQuiz> {
+class _Level3QuizState extends State<Level3Quiz> {
   final _questions = const [
     {
-      'questionText': 'Q1.She works ---- Saturday.',
+      'questionText': 'Q1.____ your help, I would never have managed.',
       'answers': [
-        {'text': 'at', 'score': 0},
-        {'text': 'to', 'score': 0},
-        {'text': 'in', 'score': 0},
-        {'text': 'on', 'score': 2},
+        {'text': 'But For', 'score': 0},
+        {'text': 'Not', 'score': 0},
+        {'text': 'Unless', 'score': 0},
+        {'text': 'Despite', 'score': 2},
       ],
     },
     {
-      'questionText': 'Q2.I stay at home ---- the morning.',
+      'questionText': 'Q2. Only when ____ left, did we notice what she had done.',
       'answers': [
-        {'text': 'at', 'score': 0},
-        {'text': 'to', 'score': 0},
-        {'text': 'in', 'score': 2},
-        {'text': 'on', 'score': 0},
+        {'text': 'Did She', 'score': 0},
+        {'text': 'She Did', 'score': 0},
+        {'text': 'She Had', 'score': 2},
+        {'text': 'Had She', 'score': 0},
       ],
     },
     {
-      'questionText': ' Q3. How do you get to work? ----.',
+      'questionText': ' Q3. It is high time you ____ that',
       'answers': [
-        {'text': 'By car', 'score': 2},
-        {'text': 'In car', 'score': 0},
-        {'text': 'By the car', 'score': 0},
-        {'text': 'On car', 'score': 0},
+        {'text': 'Stop', 'score': 2},
+        {'text': 'To Stop', 'score': 0},
+        {'text': 'Stopped', 'score': 0},
+        {'text': 'Stopping', 'score': 0},
       ],
     },
     {
-      'questionText': 'Q4.Do you like classical music? ----.',
+      'questionText': 'Q4.If he ___, I will not stay.',
       'answers': [
-        {'text': 'Yes, I likes', 'score': 0},
-        {'text': 'Yes, I like', 'score': 0},
-        {'text': 'Yes, I does', 'score': 0},
-        {'text': 'Yes, I do', 'score': 2},
+        {'text': 'Come', 'score': 0},
+        {'text': 'Comes', 'score': 2},
+        {'text': 'Came', 'score': 0},
+        {'text':'Will Come', 'score': 0},
       ],
     },
     {
-      'questionText': 'Q5. Where is Mary? She ---- over there.',
+      'questionText': 'Q5.The negative of noble is ___-',
       'answers': [
-        {'text': 'is stand', 'score': 0},
-        {'text': 'is standing', 'score': 2},
-        {'text': 'stand', 'score': 0},
-        {'text': 'standing', 'score': 0},
+        {'text': 'Innoble', 'score': 0},
+        {'text': 'Unnoble', 'score': 0},
+        {'text': 'Disnoble', 'score': 2},
+        {'text': 'Ignoble', 'score': 0},
       ],
     },
   ];

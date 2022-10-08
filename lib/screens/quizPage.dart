@@ -29,7 +29,15 @@ class _QuizPageState extends State<QuizPage> {
         quizButton(
           quizName: "English Level Test",
           quizPage: "LevelQuiz",
-        )
+        ),
+        quizButton(
+          quizName: "English Level Intermediate",
+          quizPage: "Level2Quiz",
+        ),
+        quizButton(
+          quizName: "English Level Advanced",
+          quizPage: "Level3Quiz",
+        ),
       ],
     );
   }
