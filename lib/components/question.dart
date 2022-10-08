@@ -8,8 +8,8 @@ class Question extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      constraints: BoxConstraints(minHeight: 150),
       alignment: Alignment.center,
-      height: 150,
       decoration: BoxDecoration(
           image: DecorationImage(
               image: AssetImage("images/sl_030720_28740_16.jpg"),
@@ -24,13 +24,12 @@ class Question extends StatelessWidget {
               blurRadius: 100,
             )
           ]),
-      width: double.infinity,
       margin: const EdgeInsets.all(10),
       child: Text(
         questionText,
         style: const TextStyle(
             color: Color.fromARGB(255, 0, 0, 0),
-            fontSize: 30,
+            fontSize: 25,
             fontFamily: "OpenSans"),
         textAlign: TextAlign.center,
       ),
