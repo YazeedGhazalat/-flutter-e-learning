@@ -15,17 +15,16 @@ class _MyCourseState extends State<MyCourse> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                "My Courses",
-                textAlign: TextAlign.left,
-                style: TextStyle(fontSize: 30, fontFamily: "OpenSans"),
-              ),
-            ),
-          ],
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            "My Courses",
+            textAlign: TextAlign.left,
+            style: TextStyle(
+                fontSize: 30,
+                fontFamily: "OpenSans",
+                fontWeight: FontWeight.bold),
+          ),
         ),
         SizedBox(
           height: 20,

@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
 class quizButton extends StatefulWidget {
-  quizButton({required this.quizName, required this.quizPage});
+  quizButton(
+      {required this.quizName, required this.quizPage, required this.Qcolor});
   String? quizName;
   String? quizPage;
+  Color? Qcolor;
 
   @override
   State<quizButton> createState() => _quizButtonState();
@@ -38,7 +40,7 @@ class _quizButtonState extends State<quizButton> {
               child: Row(
                 children: [
                   Container(
-                    color: Colors.red,
+                    color: widget.Qcolor,
                     width: 70,
                     height: 70,
                     child: Icon(Ionicons.extension_puzzle, color: Colors.white),
@@ -50,7 +52,8 @@ class _quizButtonState extends State<quizButton> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(widget.quizName.toString(),
-                            style: TextStyle(fontFamily: "OpenSans")),
+                            style: TextStyle(
+                                fontFamily: "OpenSans", fontSize: 17)),
                         Text('One-Way MQ',
                             style: TextStyle(
                                 color: Colors.grey, fontFamily: "OpenSans"))

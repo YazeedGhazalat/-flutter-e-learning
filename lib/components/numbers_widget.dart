@@ -15,13 +15,7 @@ class NumbersWidget extends StatelessWidget {
               child: VerticalDivider(
                 thickness: 1,
               )),
-          buildButton(context, "14", "Courses"),
-          Container(
-              height: 24,
-              child: VerticalDivider(
-                thickness: 1,
-              )),
-          buildButton(context, "3.5", "Quizzes"),
+          buildButton(context, "5", "Courses"),
         ],
       ),
     );

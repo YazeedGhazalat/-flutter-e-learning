@@ -1,10 +1,10 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:myapp/components/appbar.dart';
+import 'package:ionicons/ionicons.dart';
+
 import 'package:myapp/components/button_widget.dart';
 import 'package:myapp/components/numbers_widget.dart';
 import 'package:myapp/components/profilewidget.dart';
+import 'package:myapp/models/links.dart';
 import 'package:myapp/models/user.dart';
 import 'package:myapp/utils/user_preferences.dart';
 
@@ -21,6 +21,9 @@ class _ProfilePageState extends State<ProfilePage> {
     final user = UserPrefernces.myUser;
     return Column(
       children: [
+        const SizedBox(
+          height: 24,
+        ),
         ProfileWidget(
             imagePath: user.imagePath,
             onClicked: () {
@@ -39,7 +42,7 @@ class _ProfilePageState extends State<ProfilePage> {
         ),
         const NumbersWidget(),
         const SizedBox(
-          height: 48,
+          height: 30,
         ),
         buildAbout(user),
       ],
@@ -73,16 +76,20 @@ class _ProfilePageState extends State<ProfilePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              "About",
+              "About: ",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
             ),
-            const SizedBox(
-              height: 14,
+            SizedBox(
+              height: 5,
             ),
-            Text(
-              user.about,
-              style: TextStyle(fontSize: 14, height: 1.5),
-            )
+            Row(
+              children: [
+                Text(
+                  user.about,
+                  style: TextStyle(fontSize: 18, height: 1.5),
+                ),
+              ],
+            ),
           ],
         ),
       );

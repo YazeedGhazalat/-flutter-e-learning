@@ -36,28 +36,57 @@ class Result extends StatelessWidget {
         children: <Widget>[
           Text(
             resultPhrase,
-            style: const TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+            style: const TextStyle(
+              fontSize: 26,
+              fontWeight: FontWeight.bold,
+              fontFamily: "OpenSans",
+            ),
             textAlign: TextAlign.center,
           ), //Text
           Text(
             'Score ' '$resultScore',
-            style: const TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
+            style: const TextStyle(
+              fontSize: 36,
+              fontWeight: FontWeight.bold,
+              fontFamily: "OpenSans",
+            ),
             textAlign: TextAlign.center,
           ), //Text
-
+          SizedBox(
+            height: 10,
+          ),
           ElevatedButton.icon(
             onPressed: (() {
               resetHandler();
             }),
+            style: ElevatedButton.styleFrom(
+                elevation: 5,
+                backgroundColor: Colors.amber,
+                minimumSize: Size(180, 50),
+                maximumSize: Size(190, 250)),
             icon: Icon(Ionicons.repeat),
-            label: Text("Restart Quiz"),
+            label: Text(
+              "Restart Quiz",
+              style: TextStyle(fontFamily: "OpenSans", fontSize: 20),
+            ),
+          ),
+          SizedBox(
+            height: 10,
           ),
           ElevatedButton.icon(
+            style: ElevatedButton.styleFrom(
+                elevation: 5,
+                backgroundColor: Colors.red,
+                minimumSize: Size(180, 50),
+                maximumSize: Size(190, 250)),
             onPressed: (() {
-              Navigator.pushNamed(context, "Home");
+              Navigator.pop(context, "Home");
             }),
             icon: Icon(Ionicons.exit),
-            label: Text("Back Home"),
+            label: Text(
+              "Back Home",
+              style: TextStyle(fontFamily: "OpenSans", fontSize: 20),
+            ),
           ),
         ], //<Widget>[]
       ), //Column

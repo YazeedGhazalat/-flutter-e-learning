@@ -14,27 +14,29 @@ class _QuizPageState extends State<QuizPage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                "Quizzes:",
-                textAlign: TextAlign.left,
-                style: TextStyle(fontSize: 30, fontFamily: "OpenSans"),
-              ),
-            ),
-          ],
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            "Quizzes ",
+            textAlign: TextAlign.left,
+            style: TextStyle(
+                fontSize: 30,
+                fontFamily: "OpenSans",
+                fontWeight: FontWeight.bold),
+          ),
         ),
         quizButton(
+          Qcolor: Colors.red,
           quizName: "English Level Test",
           quizPage: "LevelQuiz",
         ),
         quizButton(
+          Qcolor: Colors.purple,
           quizName: "English Level Intermediate",
           quizPage: "Level2Quiz",
         ),
         quizButton(
+          Qcolor: Colors.green,
           quizName: "English Level Advanced",
           quizPage: "Level3Quiz",
         ),

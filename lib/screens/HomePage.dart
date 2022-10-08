@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(40)),
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.black.withOpacity(.2),
@@ -177,16 +177,14 @@ class _HomePageState extends State<HomePage> {
                             width: 10,
                           ),
                           Recommanded(
-                              cImage: "images/L.jpg",
-                              cName: "English literature",
+                              cImage: "images/5.png",
+                              cName: "Conversation",
                               iRate: 5),
                           SizedBox(
                             width: 10,
                           ),
                           Recommanded(
-                              cImage: "images/L.jpg",
-                              cName: "English literature",
-                              iRate: 5),
+                              cImage: "images/1.jpg", cName: "TOFL", iRate: 5),
                           SizedBox(
                             width: 10,
                           ),
@@ -211,7 +209,7 @@ class _HomePageState extends State<HomePage> {
                       padding: EdgeInsets.only(top: 5),
                       decoration: BoxDecoration(
                         color: Colors.green,
-                        borderRadius: BorderRadius.all(Radius.circular(30)),
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.black.withOpacity(.2),
@@ -251,7 +249,7 @@ class _HomePageState extends State<HomePage> {
                       padding: EdgeInsets.only(top: 5),
                       decoration: BoxDecoration(
                         color: Colors.blue,
-                        borderRadius: BorderRadius.all(Radius.circular(30)),
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.black.withOpacity(.2),
@@ -296,7 +294,7 @@ class _HomePageState extends State<HomePage> {
                       padding: EdgeInsets.only(top: 5),
                       decoration: BoxDecoration(
                         color: Colors.amber,
-                        borderRadius: BorderRadius.all(Radius.circular(30)),
+                        borderRadius: BorderRadius.all(Radius.circular(15)),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.black.withOpacity(.2),
