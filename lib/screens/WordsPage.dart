@@ -22,7 +22,7 @@ class _WordsState extends State<Words> {
       appBar: AppBar(
         leading: IconButton(
             onPressed: (() {
-              Navigator.pushNamed(context, "Home");
+              Navigator.pop(context, "Home");
             }),
             icon: Icon(
               Icons.arrow_back,
@@ -31,7 +31,7 @@ class _WordsState extends State<Words> {
         backgroundColor: Colors.white,
         centerTitle: true,
         title: Text(
-          "English for begginner",
+          "Words",
           style: TextStyle(color: Colors.black, fontFamily: "OpenSans"),
         ),
       ),

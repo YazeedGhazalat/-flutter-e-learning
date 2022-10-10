@@ -23,7 +23,10 @@ class _Log_inState extends State<Log_in> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Color.fromARGB(221, 222, 212, 212),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage("images/homePage.jpg"), fit: BoxFit.cover),
+        ),
         child: Center(
             child: SingleChildScrollView(
           child: Column(
@@ -32,6 +35,13 @@ class _Log_inState extends State<Log_in> {
                 width: 320,
                 height: 500,
                 decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(.2),
+                        offset: Offset(0, 0),
+                        blurRadius: 100,
+                      )
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(35))),
                 padding: EdgeInsets.all(20),

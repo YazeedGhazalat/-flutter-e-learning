@@ -21,6 +21,20 @@ class _ProfilePageState extends State<ProfilePage> {
     final user = UserPrefernces.myUser;
     return Column(
       children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            ElevatedButton.icon(
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.black),
+              onPressed: () => Navigator.popAndPushNamed(context, "statrPage"),
+              label: Text("logout"),
+              icon: Icon(Ionicons.log_out),
+            ),
+            SizedBox(
+              width: 20,
+            )
+          ],
+        ),
         const SizedBox(
           height: 24,
         ),

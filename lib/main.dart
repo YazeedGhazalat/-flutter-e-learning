@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/Courses/English4begginner.dart';
 import 'package:myapp/Courses/EnglishL2.dart';
 import 'package:myapp/Log_in/StartPage.dart';
+import 'package:myapp/Log_in/log_in.dart';
 import 'package:myapp/quizzes/Q1.dart';
 import 'package:myapp/quizzes/Q2.dart';
 import 'package:myapp/quizzes/Q3.dart';
@@ -31,6 +32,8 @@ void main() {
       "MyCourse": (context) => MyCourse(),
       "Words": (context) => Words(),
       "DescoverPage": (context) => Home(),
+      "login": (context) => Log_in(),
+      "statrPage": (context) => StartPage()
     },
     theme: ThemeData(primaryColor: Colors.green),
   ));

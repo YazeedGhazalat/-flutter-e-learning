@@ -15,13 +15,16 @@ class _Forget_passState extends State<Forget_pass> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   final myController = TextEditingController();
-  String val = "saleh@gmail.com";
-  String val1 = "saleh123";
+  String val = "admin";
+  String val1 = "admin";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Color.fromARGB(221, 222, 212, 212),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage("images/homePage.jpg"), fit: BoxFit.cover),
+        ),
         child: Center(
             child: SingleChildScrollView(
           child: Column(
@@ -30,6 +33,13 @@ class _Forget_passState extends State<Forget_pass> {
                 width: 350,
                 height: 500,
                 decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(.2),
+                        offset: Offset(0, 0),
+                        blurRadius: 100,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.all(Radius.circular(35))),
                 padding: EdgeInsets.all(20),

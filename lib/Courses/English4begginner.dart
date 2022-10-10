@@ -29,7 +29,7 @@ class _English4begginnerState extends State<English4begginner> {
       appBar: AppBar(
         leading: IconButton(
             onPressed: (() {
-              Navigator.pushNamed(context, "Home");
+              Navigator.pop(context, "Home");
             }),
             icon: Icon(
               Icons.arrow_back,
